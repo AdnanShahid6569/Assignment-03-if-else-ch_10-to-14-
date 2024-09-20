@@ -244,27 +244,87 @@ alert(result);
 // Chapter 12 to 13
 
 // q 01
-// var A = 90 , Z = 95;
-// var a = 98 , z = 122;
-
-// if(A == Z){
-//     console.log("Display larger");
-    
-// }
-// else if (a == z){
-//     console.log("Smaller");
-    
-// }
+// Not Understand
 
 // q 02
-var number = prompt("Check even odd number..")
-if(number%2 === 0){
-    console.log("Even");
-    
+var num1 = prompt("Enter Frst Number")
+var num2 = prompt("Enter Second Number")
+
+if(num1 > num2){
+  alert( `${num1} This is the larger Number ${num2}`)
 }
+else if(num2 >num1){
+  alert( `${num2} This is the larger Number  ${num1}`)
+
+}
+
 else{
-    console.log("Odd");
-    
+  alert("Both are Equal")
 }
 
 // q 03
+var check = prompt("Positive,Negative or Zero")
+if(check > 0){
+  console.log("Positive");
+  
+}
+else if(check < 0){
+  console.log("Negative");
+  
+}
+else if (check == 0){
+  console.log("Zero");
+  
+}
+else{
+  alert("Invalid")
+}
+
+// q 04
+// Not Understand
+
+// q 05
+var pass = 12345;
+var password = prompt("Enter his/her Password")
+
+
+ if(password === pass){
+  alert("Correct!")
+
+}
+else if (password != pass){
+  alert("NOt Correct!")
+}
+else if(password === ""){
+  alert("Please enter Password")
+}
+else {
+  alert("Type Password")
+}
+
+// q 06
+var greeting;
+var hour = 13;
+
+if (hour < 18) {
+greeting = "Good day";}
+
+else{
+greeting = "Good evening";
+}
+
+// q 07
+var time = prompt("Enter Time hours")
+
+if(time > 0 && time <= 12  ){
+  alert("Good Morning")
+}
+else if(time >12 && time <=17){
+  alert("Good Afternoon")
+}
+else if(time >17 && time <=21){
+  alert("Good Evening")
+}
+else if(time >21 && time <=24){
+  alert("Good Night")
+}
